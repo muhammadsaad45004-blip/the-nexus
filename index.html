@@ -15,40 +15,44 @@
 
     header {
       text-align: center;
-      padding: 30px;
+      padding: 35px;
       background: #111827;
     }
 
     h1 {
       margin: 0;
-      font-size: 42px;
+      font-size: 44px;
       letter-spacing: 2px;
     }
 
     p {
       color: #94a3b8;
-      margin-top: 5px;
+      margin-top: 8px;
+    }
+
+    .section-title {
+      padding: 20px 30px 0;
+      color: #94a3b8;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .container {
-      padding: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      padding: 20px 30px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 15px;
     }
 
     .card {
       background: #1e293b;
       padding: 20px;
-      width: 220px;
       border-radius: 12px;
-      text-align: center;
-      transition: 0.3s;
-      cursor: pointer;
-      display: block;
-      color: white;
       text-decoration: none;
+      color: white;
+      transition: 0.3s;
+      display: block;
     }
 
     .card:hover {
@@ -56,10 +60,15 @@
       transform: translateY(-5px);
     }
 
+    .tag {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+      padding: 25px;
       color: #94a3b8;
     }
   </style>
@@ -68,21 +77,54 @@
 <body>
 
 <header>
-  <h1>THE NEXUS</h1>
-  <p>Everything Worth Knowing</p>
+  <h1>The Nexus</h1>
+  <p>Scholarships • Geopolitics • History • Entertainment</p>
 </header>
+
+<div class="section-title">Featured Articles</div>
 
 <div class="container">
 
-  <a class="card" href="scholarships.html">🎓 Scholarships</a>
+  <a class="card" href="fully-funded-scholarships-2026.html">
+    <h3>Top Fully Funded Scholarships for 2026</h3>
+    <div class="tag">Scholarships • Study Abroad</div>
+  </a>
 
-  <a class="card" href="geopolitics.html">🌍 Geopolitics</a>
+  <a class="card" href="geopolitics.html">
+    <h3>Major Geopolitical Trends to Watch</h3>
+    <div class="tag">Geopolitics • World Affairs</div>
+  </a>
 
-  <a class="card" href="history.html">📜 History</a>
+  <a class="card" href="history.html">
+    <h3>The Rise and Fall of Great Civilizations</h3>
+    <div class="tag">History • Analysis</div>
+  </a>
 
-  <a class="card" href="hollywood.html">🎬 Hollywood</a>
+</div>
 
-  <a class="card" href="bollywood.html">🎥 Bollywood</a>
+<div class="section-title">Categories</div>
+
+<div class="container">
+
+  <a class="card" href="scholarships.html">
+    <h3>🎓 Scholarships</h3>
+  </a>
+
+  <a class="card" href="geopolitics.html">
+    <h3>🌍 Geopolitics</h3>
+  </a>
+
+  <a class="card" href="history.html">
+    <h3>📜 History</h3>
+  </a>
+
+  <a class="card" href="hollywood.html">
+    <h3>🎬 Hollywood</h3>
+  </a>
+
+  <a class="card" href="bollywood.html">
+    <h3>🎥 Bollywood</h3>
+  </a>
 
 </div>
 
