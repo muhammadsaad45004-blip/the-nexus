@@ -19,32 +19,46 @@
       background: #111827;
     }
 
+    h2 {
+      margin: 0;
+    }
+
     .container {
       max-width: 900px;
       margin: auto;
       padding: 30px;
     }
 
+    /* FIXED CARD DESIGN */
     .card {
       background: #1e293b;
       padding: 20px;
       margin-bottom: 15px;
       border-radius: 10px;
       transition: 0.3s;
+
+      display: block;
+      color: white;
+      text-decoration: none;
+
+      box-sizing: border-box;
     }
 
     .card:hover {
       background: #334155;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
+      transform: translateY(-3px);
     }
 
     .tag {
       color: #94a3b8;
       font-size: 14px;
+      margin-top: 5px;
+    }
+
+    /* GLOBAL LINK FIX */
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
